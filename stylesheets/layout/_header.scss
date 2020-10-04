@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+
+    ul{
+        .nav-item{
+            padding:0 20px;
+        }
+    }
+
+}
+.header{
+    width: 100%;
+    background: url(/images/bg-header.png);
+    background-size: cover;
+    
+    min-height: 100vh;
+    padding-top: 15rem;
+
+    h1,p{
+        padding-bottom: 30px;
+    }
+    &__andriod,&__windows{
+        margin-right: 15px;
+        background:$white-color ;
+        padding:17px 45px;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        border:2px solid $white-color;
+        text-decoration: none;
+        &:hover{
+            background:transparent;
+            text-decoration: none;
+        }
+
+    }
+    &__windows{
+        background: transparent;
+        &:hover{
+            background: $white-color;
+        }
+    }
+    &__link_container{
+        display: flex;
+       
+    }
+   
+
+}

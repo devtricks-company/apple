@@ -1,0 +1,72 @@
+.navbar{
+    z-index: 6;
+   &__link{
+       position: relative;
+      &:hover{
+          .navbar__drop{
+              
+            height: auto;
+            opacity: 1;
+            transform: translateY(20px);
+             
+          }
+
+          .navbar__line{
+              width:40px;
+          }
+      }
+      .navbar__line{
+          display: block;
+          width:0px;
+          height: 2px;
+          background: $white-color;
+          transition: all 0.5s ease-in-out;
+      }
+
+   }
+   &__drop{
+       height: 0;
+       width:300px;
+       overflow: hidden;
+       position: absolute;
+       background: $white-color;
+       color:$black-color;
+       transform: translateY(50px);
+       opacity: 0;
+       ul{
+           list-style: none;
+           padding:25px 15px;
+           li{
+               padding:5px 0;
+               font-size: 15px;
+               
+               &:hover{
+                   color:tomato;
+                   transform: translateX(10px);
+                   &::before{
+                       color:tomato;
+                       opacity: 1;
+                   }
+               }
+               transition: transform 0.5s ease-in-out;
+               &::before{
+                   content:"\203A";
+                   display:inline-block;
+                  font-size:25px;
+                   color:black;
+                   padding-right: 10px;
+                   opacity: 0;
+                   transition: all 0.5s ease-in-out;
+
+               }
+           }
+           
+          
+          
+       }
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+   }
+   &__home_icon::after{
+      
+   }
+}

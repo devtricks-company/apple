@@ -1,0 +1,23 @@
+.header{
+   &__mockup{
+    @keyframes action{
+        0%{
+        transform: translateY(50px);
+        }
+        25%{
+        transform: translateY(0px);
+        }
+        50%{
+        transform: translateY(50px);
+        }
+        75%{
+        transform: translateY(0px);
+        }
+        100%{
+        transform: translateY(50px);
+        }
+        }
+        animation: action 5s infinite;
+   }
+   
+}

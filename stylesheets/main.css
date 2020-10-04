@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap");
+.header__mockup {
+  -webkit-animation: action 5s infinite;
+          animation: action 5s infinite;
+}
+
+@-webkit-keyframes action {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  75% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes action {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  75% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+a {
+  text-decoration: none;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+.navbar a {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: white !important;
+}
+
+.header h1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white !important;
+}
+
+.header p {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white !important;
+}
+
+.header__andriod, .header__windows {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: black !important;
+}
+
+.header__windows {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white !important;
+}
+
+.header__windows svg {
+  fill: white;
+  width: 20px;
+}
+
+.header__windows:hover {
+  font-family: "Heebo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: black !important;
+}
+
+.header__windows:hover svg {
+  fill: black;
+  width: 20px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar ul .nav-item {
+  padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+  background: url(/images/bg-header.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 15rem;
+}
+
+.header h1, .header p {
+  padding-bottom: 30px;
+}
+
+.header__andriod, .header__windows {
+  margin-right: 15px;
+  background: white;
+  padding: 17px 45px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+.header__andriod:hover, .header__windows:hover {
+  background: transparent;
+  text-decoration: none;
+}
+
+.header__windows {
+  background: transparent;
+}
+
+.header__windows:hover {
+  background: white;
+}
+
+.header__link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar {
+  z-index: 6;
+}
+
+.navbar__link {
+  position: relative;
+}
+
+.navbar__link:hover .navbar__drop {
+  height: auto;
+  opacity: 1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.navbar__link:hover .navbar__line {
+  width: 40px;
+}
+
+.navbar__link .navbar__line {
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar__drop {
+  height: 0;
+  width: 300px;
+  overflow: hidden;
+  position: absolute;
+  background: white;
+  color: black;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.navbar__drop ul {
+  list-style: none;
+  padding: 25px 15px;
+}
+
+.navbar__drop ul li {
+  padding: 5px 0;
+  font-size: 15px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.navbar__drop ul li:hover {
+  color: tomato;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.navbar__drop ul li:hover::before {
+  color: tomato;
+  opacity: 1;
+}
+
+.navbar__drop ul li::before {
+  content: "\203A";
+  display: inline-block;
+  font-size: 25px;
+  color: black;
+  padding-right: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */
