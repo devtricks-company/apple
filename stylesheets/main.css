@@ -188,8 +188,8 @@ a {
 .navbar__link:hover .navbar__drop {
   height: auto;
   opacity: 1;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .navbar__link:hover .navbar__line {
